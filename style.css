@@ -1,7 +1,10 @@
-
+body {
+  margin: 0;
+  padding: 0;
+}
 
 .wrapper {
-    margin: 2rem auto;
+    margin: 0;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 15rem 12rem 12rem 12rem 15rem;
@@ -51,148 +54,6 @@ aside {
 
 footer {
     grid-area: footer;
-}
-
-html, body{
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar {
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-  }
-  
-  .navbar-logo a {
-    color: white;
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .navbar-links {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-  }
-  
-  .navbar-links li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 5px 10px;
-  }
-  
-  .navbar-links li a:hover {
-    background-color: #575757;
-    border-radius: 5px;
-  }
-
-  .hamburger{
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-    cursor: pointer;
-    background: none;
-    border: none;
-  }
-
- .line{
-  width: 100%;
-  height: 3px;
-  background-color: white;
- }
-
-
-
- .contactSection{
-    display: flex;
-    flex-wrap: warp;
-    justify-content: center;
-    gap: 100px;
- }
-
- .contactImg{
-    height: 96px;
- }
-
- .contactText{
-    font-size: 28px;
- }
-
- .contactBigText{
-    font-size: 32px;
-    text-align: center;
- }
-
-
- 
-
-
-.wrapper {
-    margin: 2rem auto;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 15rem 12rem 12rem 12rem 15rem;
-    grid-template-areas: 
-    "header header header header header header"
-    "main main main main aside aside"
-    "sect-a sect-a sect-b sect-b sect-c sect-c"
-    "sect-d sect-d sect-e sect-e sect-f sect-f"
-    "footer footer footer footer footer footer";
-}
-
-header {
-    grid-area: header;
-}
-
-main {
-    grid-area: main;
-}
-
-aside {
-    grid-area: aside;
-}
-
-.sect-a {
-    grid-area: sect-a;
-}
-
-.sect-b {
-    grid-area: sect-b;
-}
-
-.sect-c {
-    grid-area: sect-c;
-}
-
-.sect-d {
-    grid-area: sect-d;
-}
-
-.sect-e {
-    grid-area: sect-e;
-}
-
-.sect-f {
-    grid-area: sect-f;
-}
-
-footer {
-    grid-area: footer;
-}
-
-html, body{
-    height: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 .navbar {
@@ -247,7 +108,36 @@ html, body{
  }
 
  @media (max-width: 768px) {
+  
+  .wrapper {
+    margin: 0;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 20rem 15rem 10rem 10rem 15rem;
+    grid-template-areas: 
+    "header header header"
+    "main main aside"
+    "sect-a sect-b sect-c"
+    "sect-d sect-e sect-f"
+    "footer footer footer"
+    ;   
+  }
+  
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: black;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
 
+  .navbar-links.active {
+    display: flex;
+  }
 
   
     .navbar-links {
@@ -286,12 +176,12 @@ html, body{
 }
 
 .social-links li {
-    margin: 0; /* マージンを削除 */
+  margin: 0; /* マージンを削除 */
 }
 
 .social-links a {
-    color: #007bff; /* リンクの色 */
-    text-decoration: none; /* 下線を削除 */
+  color: #007bff; /* リンクの色 */
+  text-decoration: none; /* 下線を削除 */
 }
 
 .social-links a:hover {
@@ -308,4 +198,22 @@ html, body{
     height: 128px;
 }
 }
+@media (max-width: 480px) {
 
+  aside {display: none;}
+  
+  .wrapper {
+      margin: 0;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 20rem 15rem 10rem 10rem 10rem 10rem 15rem;
+      grid-template-areas: 
+      "header header"
+      "main main"
+      "aside aside"
+      "sect-a sect-b"
+      "sect-c sect-d"
+      "sect-e sect-f"
+      "footer footer"
+      ;   
+  }
+}
