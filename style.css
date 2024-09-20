@@ -109,6 +109,29 @@ html, body{
   background-color: white;
  }
 
+
+
+ .contactSection{
+    display: flex;
+    flex-wrap: warp;
+    justify-content: center;
+    gap: 100px;
+ }
+
+ .contactImg{
+    height: 96px;
+ }
+
+ .contactText{
+    font-size: 28px;
+ }
+
+ .contactBigText{
+    font-size: 32px;
+    text-align: center;
+ }
+
+
  @media (max-width: 768px) {
 
 
@@ -132,6 +155,18 @@ html, body{
   
     .hamburger {
       display: flex;
+    } 
+
+    
+    .contactSection{
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
     }
+
+    
+ .contactImg{
+    height: 128px;
+ }
  }  
 
