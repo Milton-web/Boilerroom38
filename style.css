@@ -1,3 +1,56 @@
+.wrapper {
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 15rem 12rem 12rem 12rem 15rem;
+    grid-template-areas: 
+    "header header header header header header"
+    "main main main main aside aside"
+    "sect-a sect-a sect-b sect-b sect-c sect-c"
+    "sect-d sect-d sect-e sect-e sect-f sect-f"
+    "footer footer footer footer footer footer";
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+.sect-a {
+    grid-area: sect-a;
+}
+
+.sect-b {
+    grid-area: sect-b;
+}
+
+.sect-c {
+    grid-area: sect-c;
+}
+
+.sect-d {
+    grid-area: sect-d;
+}
+
+.sect-e {
+    grid-area: sect-e;
+}
+
+.sect-f {
+    grid-area: sect-f;
+}
+
+footer {
+    grid-area: footer;
+}
+
 html, body{
     height: 100%;
     margin: 0;
@@ -79,52 +132,24 @@ html, body{
     .hamburger {
       display: flex;
     }
- } 
- footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer-content section {
-    margin-bottom: 15px;
-}
-
-.footer-content h2 {
-    font-size: 1.5rem;
-}
-
-.footer-content a {
-    color: #ffcc00;
-    text-decoration: none;
-}
-
-.footer-content a:hover {
-    text-decoration: underline;
-}
-
-.social-links {
-    list-style-type: none;
-    padding: 0;
+  
+ .social-links {
+    list-style-type: none; /* バレットを削除 */
+    padding: 0; /* パディングを削除 */
+    display: flex; /* フレックスボックスを使用して横並びに */
+    justify-content: center; /* 中央揃え */
+    gap: 10px; /* リンクの間にスペースを追加 */
 }
 
 .social-links li {
-    display: inline;
-    margin-right: 10px;
+    margin: 0; /* マージンを削除 */
 }
 
-@media (min-width: 768px) {
-    .footer-content {
-        flex-direction: row;
-        justify-content: space-around;
-    }
+.social-links a {
+    color: #007bff; /* リンクの色 */
+    text-decoration: none; /* 下線を削除 */
+}
+
+.social-links a:hover {
+    text-decoration: underline; /* ホバー時に下線を追加 */
 }
