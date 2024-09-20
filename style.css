@@ -80,3 +80,84 @@ html, body{
       display: flex;
     }
  }  
+
+
+ body {
+  font-family:Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  line-height: 1.6;
+
+ }
+main{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  margin: 20px;
+  
+}
+
+
+ h1 {
+  text-align: center;
+  margin-top: 50px;
+
+ }
+
+ h2 {
+  color: blue;
+  margin: 20px;
+
+ }
+
+ h3 {
+  color: blue;
+  margin: 20px
+  ;
+ }
+
+ h4 { 
+  color: blue;
+  margin: 20px;
+ }
+
+ section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+ }
+
+ @media (min-width: 768px) {
+  main {
+      grid-template-columns: 1fr 1fr; 
+      grid-template-areas:
+          "mission values"
+          "team leadership"
+          "history history"; 
+      grid-gap: 2rem;
+  }
+
+  #mission {
+      grid-area: mission; 
+  }
+
+  #values {
+      grid-area: values; 
+  }
+
+  #team {
+      grid-area: team; 
+  }
+
+  #leadership {
+      grid-area: leadership;
+  }
+
+  #history {
+      grid-area: history; 
+  }
+}
+
