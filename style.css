@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding: 0
+  padding: 0;
 }
 
 .wrapper {
@@ -163,9 +163,6 @@ footer {
 .social-links a:hover {
   text-decoration: underline; /* ホバー時に下線を追加 */
 }
-
-}
-
 @media (max-width: 480px) {
 
   aside {display: none;}
@@ -185,5 +182,3 @@ footer {
       ;   
   }
 }
-  
-
