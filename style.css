@@ -1,0 +1,52 @@
+.wrapper {
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 15rem 12rem 12rem 12rem 15rem;
+    grid-template-areas: 
+    "header header header header header header"
+    "main main main main aside aside"
+    "sect-a sect-a sect-b sect-b sect-c sect-c"
+    "sect-d sect-d sect-e sect-e sect-f sect-f"
+    "footer footer footer footer footer footer";
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+.sect-a {
+    grid-area: sect-a;
+}
+
+.sect-b {
+    grid-area: sect-b;
+}
+
+.sect-c {
+    grid-area: sect-c;
+}
+
+.sect-d {
+    grid-area: sect-d;
+}
+
+.sect-e {
+    grid-area: sect-e;
+}
+
+.sect-f {
+    grid-area: sect-f;
+}
+
+footer {
+    grid-area: footer;
+}
