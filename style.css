@@ -109,9 +109,6 @@ html, body{
  }
 
  @media (max-width: 768px) {
-
-
-  
     .navbar-links {
       display: none;
       flex-direction: column;
@@ -152,4 +149,5 @@ html, body{
 
 .social-links a:hover {
     text-decoration: underline; /* ホバー時に下線を追加 */
+}
 }
