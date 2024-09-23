@@ -9,13 +9,13 @@ body {
   position: relative;
   justify-items: center;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 5rem 12rem 12rem 12rem 15rem;
+  grid-template-rows: 5rem 12rem 12rem 12rem;
   grid-template-areas: 
   "header header header header header header"
   "main main main main aside aside"
   "sect-a sect-a sect-a sect-b sect-b sect-b"
-  "sect-c sect-c sect-c sect-d sect-d sect-d"
-  "footer footer footer footer footer footer";
+  "sect-c sect-c sect-c sect-d sect-d sect-d";
+  /* "footer footer footer footer footer footer"; */
   gap: 0.5rem;
   background-color: lightgray;
 }
@@ -79,6 +79,14 @@ footer {grid-area: footer;}
   grid-template-columns: 1fr;
   grid-gap: 2rem;
   margin: 20px;
+}
+
+.mainKontakter {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  margin: 20px;
+
 }
 
 .AboutTitle {
@@ -326,6 +334,7 @@ footer {
   color: #ffffff; /* Text color */
   padding: 20px; /* Padding around content */
   text-align: center; /* Center text */
+  
 }
 .footer-content {
   max-width: 800px; /* Limit footer content width */
