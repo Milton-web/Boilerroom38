@@ -228,7 +228,7 @@ main{
 
   }
   
-   main {
+  main {
       grid-template-columns: 1fr 1fr; 
       grid-template-areas:
           "mission values"
@@ -301,6 +301,79 @@ main{
     align-items: center;
     gap: 14px;
   }
+
+  .social-links {
+    list-style-type: none; /* Remove bullets from social links */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center social links */
+    gap: 10px; /* Space between links */
+}
+
+.social-links li {
+    margin: 0; /* Remove margin */
+}
+
+.social-links a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline from link */
+}
+
+.social-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+}
+
+footer {
+    grid-area: footer; /* Assign grid area for footer */
+    background-color: #282c34; /* Dark background color */
+    color: #ffffff; /* Text color */
+    padding: 20px; /* Padding around content */
+    text-align: center; /* Center text */
+}
+.footer-content {
+    max-width: 800px; /* Limit footer content width */
+    margin: 0 auto; /* Center footer content */
+}
+
+footer h2 {
+    font-size: 1.5em; /* Font size for footer headings */
+    margin-bottom: 10px; /* Space below headings */
+}
+
+footer a {
+    color: #61dafb; /* Link color in footer */
+    text-decoration: none; /* Remove underline from link */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+footer form {
+    margin-top: 20px; /* Space above form */
+}
+
+footer input[type="email"] {
+    padding: 10px; /* Padding inside input */
+    width: 200px; /* Width of input */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+footer button {
+    padding: 10px 15px; /* Padding for button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #61dafb; /* Button background color */
+    color: #282c34; /* Button text color */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+footer button:hover {
+    background-color: #21a1f1; /* Change background color on hover */
+}
+
   
   @media (max-width: 480px) {
 
