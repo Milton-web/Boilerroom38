@@ -72,6 +72,47 @@ footer {
   font-weight: bold;
 }
 
+main{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  margin: 20px;
+  
+}
+
+
+ h1 {
+  text-align: center;
+  margin-top: 50px;
+
+ }
+
+ h2 {
+  color: blue;
+  margin: 20px;
+
+ }
+
+ h3 {
+  color: blue;
+  margin: 20px
+  ;
+ }
+
+ h4 { 
+  color: blue;
+  margin: 20px;
+ }
+
+ section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+ }
+
 .navbar-links {
   list-style: none;
   display: flex;
@@ -186,6 +227,35 @@ footer {
     transition: opacity 0.3s ease-in-out;
 
   }
+  
+   main {
+      grid-template-columns: 1fr 1fr; 
+      grid-template-areas:
+          "mission values"
+          "team leadership"
+          "history history"; 
+      grid-gap: 2rem;
+  }
+
+  #mission {
+      grid-area: mission; 
+  }
+
+  #values {
+      grid-area: values; 
+  }
+
+  #team {
+      grid-area: team; 
+  }
+
+  #leadership {
+      grid-area: leadership;
+  }
+
+  #history {
+      grid-area: history; 
+  }
 
   .navbar-links.active {
     display: flex;
@@ -231,13 +301,8 @@ footer {
     align-items: center;
     gap: 14px;
   }
-
-  .contactImg {
-    height: 128px;
-  }
-}
-
-@media (max-width: 480px) {
+  
+  @media (max-width: 480px) {
 
   aside {
     display: none;
@@ -258,3 +323,5 @@ footer {
     ;
   }
 }
+
+
